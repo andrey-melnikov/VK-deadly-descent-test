@@ -15,6 +15,13 @@
             "fallbackPath": ""
         },
         {
+            "name": "streamingassets_manifest",
+            "ext": "json",
+            "path": "streamingassets_manifest.json",
+            "fallbackExt": "",
+            "fallbackPath": ""
+        },
+        {
             "name": "AUDI_R8",
             "ext": "png",
             "path": "CarIcons/AUDI_R8.png",
@@ -1882,6 +1889,300 @@
             "path": "glb/R-3-1-S.glb",
             "fallbackExt": "",
             "fallbackPath": ""
+        },
+        {
+            "name": "aggressiveness_off_fx",
+            "ext": "ogg",
+            "path": "CarEngines/Boxer_German_MQ/aggressiveness_off_fx.ogg",
+            "fallbackExt": "ogg",
+            "fallbackPath": "CarEngines/V10_Italian_MQ/aggressiveness_off_fx.ogg"
+        },
+        {
+            "name": "aggressiveness_on_fx",
+            "ext": "ogg",
+            "path": "CarEngines/Boxer_German_MQ/aggressiveness_on_fx.ogg",
+            "fallbackExt": "ogg",
+            "fallbackPath": "CarEngines/V10_Italian_MQ/aggressiveness_on_fx.ogg"
+        },
+        {
+            "name": "beep_1",
+            "ext": "ogg",
+            "path": "CarEngines/Boxer_German_MQ/beep_1.ogg",
+            "fallbackExt": "ogg",
+            "fallbackPath": "CarEngines/V10_Italian_MQ/beep_1.ogg"
+        },
+        {
+            "name": "high_off",
+            "ext": "ogg",
+            "path": "CarEngines/Boxer_German_MQ/high_off.ogg",
+            "fallbackExt": "ogg",
+            "fallbackPath": "CarEngines/V10_Italian_MQ/high_off.ogg"
+        },
+        {
+            "name": "high_on",
+            "ext": "ogg",
+            "path": "CarEngines/Boxer_German_MQ/high_on.ogg",
+            "fallbackExt": "ogg",
+            "fallbackPath": "CarEngines/V10_Italian_MQ/high_on.ogg"
+        },
+        {
+            "name": "idle",
+            "ext": "ogg",
+            "path": "CarEngines/Boxer_German_MQ/idle.ogg",
+            "fallbackExt": "ogg",
+            "fallbackPath": "CarEngines/V10_Italian_MQ/idle.ogg"
+        },
+        {
+            "name": "idle_low_off",
+            "ext": "ogg",
+            "path": "CarEngines/Boxer_German_MQ/idle_low_off.ogg",
+            "fallbackExt": "ogg",
+            "fallbackPath": "CarEngines/V10_Italian_MQ/idle_low_off.ogg"
+        },
+        {
+            "name": "idle_low_on",
+            "ext": "ogg",
+            "path": "CarEngines/Boxer_German_MQ/idle_low_on.ogg",
+            "fallbackExt": "ogg",
+            "fallbackPath": "CarEngines/V10_Italian_MQ/idle_low_on.ogg"
+        },
+        {
+            "name": "low_med_off",
+            "ext": "ogg",
+            "path": "CarEngines/Boxer_German_MQ/low_med_off.ogg",
+            "fallbackExt": "ogg",
+            "fallbackPath": "CarEngines/V10_Italian_MQ/low_med_off.ogg"
+        },
+        {
+            "name": "low_med_on",
+            "ext": "ogg",
+            "path": "CarEngines/Boxer_German_MQ/low_med_on.ogg",
+            "fallbackExt": "ogg",
+            "fallbackPath": "CarEngines/V10_Italian_MQ/low_med_on.ogg"
+        },
+        {
+            "name": "low_off",
+            "ext": "ogg",
+            "path": "CarEngines/Boxer_German_MQ/low_off.ogg",
+            "fallbackExt": "ogg",
+            "fallbackPath": "CarEngines/V10_Italian_MQ/low_off.ogg"
+        },
+        {
+            "name": "low_on",
+            "ext": "ogg",
+            "path": "CarEngines/Boxer_German_MQ/low_on.ogg",
+            "fallbackExt": "ogg",
+            "fallbackPath": "CarEngines/V10_Italian_MQ/low_on.ogg"
+        },
+        {
+            "name": "maxRPM",
+            "ext": "ogg",
+            "path": "CarEngines/Boxer_German_MQ/maxRPM.ogg",
+            "fallbackExt": "ogg",
+            "fallbackPath": "CarEngines/V10_Italian_MQ/maxRPM.ogg"
+        },
+        {
+            "name": "med_high_off",
+            "ext": "ogg",
+            "path": "CarEngines/Boxer_German_MQ/med_high_off.ogg",
+            "fallbackExt": "ogg",
+            "fallbackPath": "CarEngines/V10_Italian_MQ/med_high_off.ogg"
+        },
+        {
+            "name": "med_high_on",
+            "ext": "ogg",
+            "path": "CarEngines/Boxer_German_MQ/med_high_on.ogg",
+            "fallbackExt": "ogg",
+            "fallbackPath": "CarEngines/V10_Italian_MQ/med_high_on.ogg"
+        },
+        {
+            "name": "med_off",
+            "ext": "ogg",
+            "path": "CarEngines/Boxer_German_MQ/med_off.ogg",
+            "fallbackExt": "ogg",
+            "fallbackPath": "CarEngines/V10_Italian_MQ/med_off.ogg"
+        },
+        {
+            "name": "med_on",
+            "ext": "ogg",
+            "path": "CarEngines/Boxer_German_MQ/med_on.ogg",
+            "fallbackExt": "ogg",
+            "fallbackPath": "CarEngines/V10_Italian_MQ/med_on.ogg"
+        },
+        {
+            "name": "reversing_1",
+            "ext": "ogg",
+            "path": "CarEngines/Boxer_German_MQ/reversing_1.ogg",
+            "fallbackExt": "ogg",
+            "fallbackPath": "CarEngines/V10_Italian_MQ/reversing_1.ogg"
+        },
+        {
+            "name": "very_high_off",
+            "ext": "ogg",
+            "path": "CarEngines/Boxer_German_MQ/very_high_off.ogg",
+            "fallbackExt": "ogg",
+            "fallbackPath": "CarEngines/V10_Italian_MQ/very_high_off.ogg"
+        },
+        {
+            "name": "very_high_on",
+            "ext": "ogg",
+            "path": "CarEngines/Boxer_German_MQ/very_high_on.ogg",
+            "fallbackExt": "ogg",
+            "fallbackPath": "CarEngines/V10_Italian_MQ/very_high_on.ogg"
+        },
+        {
+            "name": "wind_1",
+            "ext": "ogg",
+            "path": "CarEngines/Boxer_German_MQ/wind_1.ogg",
+            "fallbackExt": "ogg",
+            "fallbackPath": "CarEngines/V10_Italian_MQ/wind_1.ogg"
+        },
+        {
+            "name": "int_aggressiveness_off_fx",
+            "ext": "ogg",
+            "path": "CarEngines/Boxer_German_interior_MQ/int_aggressiveness_off_fx.ogg",
+            "fallbackExt": "ogg",
+            "fallbackPath": "CarEngines/V10_Italian_interior_MQ/int_aggressiveness_off_fx.ogg"
+        },
+        {
+            "name": "int_aggressiveness_on_fx",
+            "ext": "ogg",
+            "path": "CarEngines/Boxer_German_interior_MQ/int_aggressiveness_on_fx.ogg",
+            "fallbackExt": "ogg",
+            "fallbackPath": "CarEngines/V10_Italian_interior_MQ/int_aggressiveness_on_fx.ogg"
+        },
+        {
+            "name": "int_beep_1",
+            "ext": "ogg",
+            "path": "CarEngines/Boxer_German_interior_MQ/int_beep_1.ogg",
+            "fallbackExt": "ogg",
+            "fallbackPath": "CarEngines/V10_Italian_interior_MQ/int_beep_1.ogg"
+        },
+        {
+            "name": "int_high_off",
+            "ext": "ogg",
+            "path": "CarEngines/Boxer_German_interior_MQ/int_high_off.ogg",
+            "fallbackExt": "ogg",
+            "fallbackPath": "CarEngines/V10_Italian_interior_MQ/int_high_off.ogg"
+        },
+        {
+            "name": "int_high_on",
+            "ext": "ogg",
+            "path": "CarEngines/Boxer_German_interior_MQ/int_high_on.ogg",
+            "fallbackExt": "ogg",
+            "fallbackPath": "CarEngines/V10_Italian_interior_MQ/int_high_on.ogg"
+        },
+        {
+            "name": "int_idle",
+            "ext": "ogg",
+            "path": "CarEngines/Boxer_German_interior_MQ/int_idle.ogg",
+            "fallbackExt": "ogg",
+            "fallbackPath": "CarEngines/V10_Italian_interior_MQ/int_idle.ogg"
+        },
+        {
+            "name": "int_idle_low_off",
+            "ext": "ogg",
+            "path": "CarEngines/Boxer_German_interior_MQ/int_idle_low_off.ogg",
+            "fallbackExt": "ogg",
+            "fallbackPath": "CarEngines/V10_Italian_interior_MQ/int_idle_low_off.ogg"
+        },
+        {
+            "name": "int_idle_low_on",
+            "ext": "ogg",
+            "path": "CarEngines/Boxer_German_interior_MQ/int_idle_low_on.ogg",
+            "fallbackExt": "ogg",
+            "fallbackPath": "CarEngines/V10_Italian_interior_MQ/int_idle_low_on.ogg"
+        },
+        {
+            "name": "int_low_med_off",
+            "ext": "ogg",
+            "path": "CarEngines/Boxer_German_interior_MQ/int_low_med_off.ogg",
+            "fallbackExt": "ogg",
+            "fallbackPath": "CarEngines/V10_Italian_interior_MQ/int_low_med_off.ogg"
+        },
+        {
+            "name": "int_low_med_on",
+            "ext": "ogg",
+            "path": "CarEngines/Boxer_German_interior_MQ/int_low_med_on.ogg",
+            "fallbackExt": "ogg",
+            "fallbackPath": "CarEngines/V10_Italian_interior_MQ/int_low_med_on.ogg"
+        },
+        {
+            "name": "int_low_off",
+            "ext": "ogg",
+            "path": "CarEngines/Boxer_German_interior_MQ/int_low_off.ogg",
+            "fallbackExt": "ogg",
+            "fallbackPath": "CarEngines/V10_Italian_interior_MQ/int_low_off.ogg"
+        },
+        {
+            "name": "int_low_on",
+            "ext": "ogg",
+            "path": "CarEngines/Boxer_German_interior_MQ/int_low_on.ogg",
+            "fallbackExt": "ogg",
+            "fallbackPath": "CarEngines/V10_Italian_interior_MQ/int_low_on.ogg"
+        },
+        {
+            "name": "int_maxRPM",
+            "ext": "ogg",
+            "path": "CarEngines/Boxer_German_interior_MQ/int_maxRPM.ogg",
+            "fallbackExt": "ogg",
+            "fallbackPath": "CarEngines/V10_Italian_interior_MQ/int_maxRPM.ogg"
+        },
+        {
+            "name": "int_med_high_off",
+            "ext": "ogg",
+            "path": "CarEngines/Boxer_German_interior_MQ/int_med_high_off.ogg",
+            "fallbackExt": "ogg",
+            "fallbackPath": "CarEngines/V10_Italian_interior_MQ/int_med_high_off.ogg"
+        },
+        {
+            "name": "int_med_high_on",
+            "ext": "ogg",
+            "path": "CarEngines/Boxer_German_interior_MQ/int_med_high_on.ogg",
+            "fallbackExt": "ogg",
+            "fallbackPath": "CarEngines/V10_Italian_interior_MQ/int_med_high_on.ogg"
+        },
+        {
+            "name": "int_med_off",
+            "ext": "ogg",
+            "path": "CarEngines/Boxer_German_interior_MQ/int_med_off.ogg",
+            "fallbackExt": "ogg",
+            "fallbackPath": "CarEngines/V10_Italian_interior_MQ/int_med_off.ogg"
+        },
+        {
+            "name": "int_med_on",
+            "ext": "ogg",
+            "path": "CarEngines/Boxer_German_interior_MQ/int_med_on.ogg",
+            "fallbackExt": "ogg",
+            "fallbackPath": "CarEngines/V10_Italian_interior_MQ/int_med_on.ogg"
+        },
+        {
+            "name": "int_reversing_1",
+            "ext": "ogg",
+            "path": "CarEngines/Boxer_German_interior_MQ/int_reversing_1.ogg",
+            "fallbackExt": "ogg",
+            "fallbackPath": "CarEngines/V10_Italian_interior_MQ/int_reversing_1.ogg"
+        },
+        {
+            "name": "int_very_high_off",
+            "ext": "ogg",
+            "path": "CarEngines/Boxer_German_interior_MQ/int_very_high_off.ogg",
+            "fallbackExt": "ogg",
+            "fallbackPath": "CarEngines/V10_Italian_interior_MQ/int_very_high_off.ogg"
+        },
+        {
+            "name": "int_very_high_on",
+            "ext": "ogg",
+            "path": "CarEngines/Boxer_German_interior_MQ/int_very_high_on.ogg",
+            "fallbackExt": "ogg",
+            "fallbackPath": "CarEngines/V10_Italian_interior_MQ/int_very_high_on.ogg"
+        },
+        {
+            "name": "int_wind_1",
+            "ext": "ogg",
+            "path": "CarEngines/Boxer_German_interior_MQ/int_wind_1.ogg",
+            "fallbackExt": "ogg",
+            "fallbackPath": "CarEngines/V10_Italian_interior_MQ/int_wind_1.ogg"
         }
     ]
 }
