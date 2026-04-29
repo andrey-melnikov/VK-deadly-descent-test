@@ -87,11 +87,14 @@ window.addEventListener('pointerdown', () => {
 })
 
 let bridgeScript = null
+let bridgeTimeout = null
 let bridgeLoaded = false
 
 function addLocalBridge() {
     if (bridgeLoaded) return
     bridgeLoaded = true
+    clearTimeout(bridgeTimeout)
+
     if (bridgeScript && bridgeScript.parentNode) {
         bridgeScript.onload = null
         bridgeScript.onerror = null
@@ -107,9 +110,20 @@ function addLocalBridge() {
     }
 }
 
-addLocalBridge()
+bridgeScript = document.createElement('script')
+bridgeScript.src = 'https://bridge.playgama.com/v1/stable/playgama-bridge.js'
+bridgeScript.onload = initializeBridge
+bridgeScript.onerror = addLocalBridge
+
+bridgeTimeout = setTimeout(() => {
+    console.warn('CDN bridge failed to load within 2 seconds, loading local bridge')
+    addLocalBridge()
+}, 2000)
+
+document.head.appendChild(bridgeScript)
 
 function initializeBridge() {
+    clearTimeout(bridgeTimeout)
     bridge.engine = 'unity'
     bridge
         .initialize()
@@ -118,6 +132,7 @@ function initializeBridge() {
             bridge.advertisement.on('banner_state_changed', state => sendMessageToUnity('OnBannerStateChanged', state))
             bridge.advertisement.on('interstitial_state_changed', state => sendMessageToUnity('OnInterstitialStateChanged', state))
             bridge.advertisement.on('rewarded_state_changed', state => sendMessageToUnity('OnRewardedStateChanged', state))
+            bridge.advertisement.on('advanced_banners_state_changed', state => sendMessageToUnity('OnAdvancedBannersStateChanged', state))
             bridge.game.on('visibility_state_changed', state => sendMessageToUnity('OnVisibilityStateChanged', state))
             bridge.platform.on('audio_state_changed', isEnabled => sendMessageToUnity('OnAudioStateChanged', isEnabled.toString()))
             bridge.platform.on('pause_state_changed', isPaused => sendMessageToUnity('OnPauseStateChanged', isPaused.toString()))
@@ -203,8 +218,20 @@ window.getIsPlatformGetGameByIdSupported = function() {
     return bridge.platform.isGetGameByIdSupported.toString()
 }
 
-window.sendMessageToPlatform = function(message) {
-    bridge.platform.sendMessage(message)
+window.sendMessageToPlatform = function(message, options) {
+    if (options) {
+        options = JSON.parse(options)
+    }
+
+    bridge.platform.sendMessage(message, options)
+}
+
+window.sendCustomMessageToPlatform = function(id, options) {
+    if (options) {
+        options = JSON.parse(options)
+    }
+
+    bridge.platform.sendCustomMessage(id, options)
 }
 
 window.getServerTime = function() {
@@ -446,6 +473,26 @@ window.showRewarded = function(placement) {
     bridge.advertisement.showRewarded(placement)
 }
 
+window.getIsAdvancedBannersSupported = function() {
+    return bridge.advertisement.isAdvancedBannersSupported.toString()
+}
+
+window.getAdvancedBannersState = function() {
+    if (bridge.advertisement.advancedBannersState) {
+        return bridge.advertisement.advancedBannersState
+    } else {
+        return ''
+    }
+}
+
+window.showAdvancedBanners = function(placement) {
+    bridge.advertisement.showAdvancedBanners(placement)
+}
+
+window.hideAdvancedBanners = function() {
+    bridge.advertisement.hideAdvancedBanners()
+}
+
 window.checkAdBlock = function() {
     bridge.advertisement.checkAdBlock()
         .then(result => {
@@ -478,8 +525,16 @@ window.getIsAddToHomeScreenSupported = function() {
     return bridge.social.isAddToHomeScreenSupported.toString()
 }
 
+window.getIsAddToHomeScreenRewardSupported = function() {
+    return bridge.social.isAddToHomeScreenRewardSupported.toString()
+}
+
 window.getIsAddToFavoritesSupported = function() {
     return bridge.social.isAddToFavoritesSupported.toString()
+}
+
+window.getIsAddToFavoritesRewardSupported = function() {
+    return bridge.social.isAddToFavoritesRewardSupported.toString()
 }
 
 window.getIsRateSupported = function() {
@@ -573,6 +628,26 @@ window.rate = function() {
         })
         .catch(error => {
             sendMessageToUnity('OnRateCompleted', 'false')
+        })
+}
+
+window.getAddToHomeScreenReward = function() {
+    bridge.social.getAddToHomeScreenReward()
+        .then(() => {
+            sendMessageToUnity('OnGetAddToHomeScreenRewardCompleted', 'true')
+        })
+        .catch(error => {
+            sendMessageToUnity('OnGetAddToHomeScreenRewardCompleted', 'false')
+        })
+}
+
+window.getAddToFavoritesReward = function() {
+    bridge.social.getAddToFavoritesReward()
+        .then(() => {
+            sendMessageToUnity('OnGetAddToFavoritesRewardCompleted', 'true')
+        })
+        .catch(error => {
+            sendMessageToUnity('OnGetAddToFavoritesRewardCompleted', 'false')
         })
 }
 

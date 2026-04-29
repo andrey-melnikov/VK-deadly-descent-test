@@ -627,8 +627,8 @@
             "name": "ReflectionProbe-1",
             "ext": "ktx2",
             "path": "HighResTextures/ReflectionProbe-1.ktx2",
-            "fallbackExt": "exr",
-            "fallbackPath": "HighResTextures/ReflectionProbe-1.exr"
+            "fallbackExt": "png",
+            "fallbackPath": "HighResTextures/ReflectionProbe-1.png"
         },
         {
             "name": "TireMarks2",
@@ -715,13 +715,6 @@
             "fallbackPath": ""
         },
         {
-            "name": "Campaign",
-            "ext": "jpg",
-            "path": "MapIcons/Campaign.jpg",
-            "fallbackExt": "",
-            "fallbackPath": ""
-        },
-        {
             "name": "Containers",
             "ext": "jpg",
             "path": "MapIcons/Containers.jpg",
@@ -739,13 +732,6 @@
             "name": "Descent",
             "ext": "jpg",
             "path": "MapIcons/Descent.jpg",
-            "fallbackExt": "",
-            "fallbackPath": ""
-        },
-        {
-            "name": "Freeroam",
-            "ext": "jpg",
-            "path": "MapIcons/Freeroam.jpg",
             "fallbackExt": "",
             "fallbackPath": ""
         },
